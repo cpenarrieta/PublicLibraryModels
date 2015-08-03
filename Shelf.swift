@@ -1,7 +1,13 @@
 import Foundation
 
 class Shelf {
+    
+    var category: String
     var books = [Book]()
+    
+    init (category:String){
+        self.category = category
+    }
     
     func AddBook(book: Book){
         books.append(book)

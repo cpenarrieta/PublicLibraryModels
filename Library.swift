@@ -1,7 +1,15 @@
 import Foundation
 
 class Library {
+    
+    var name: String
+    var address: String
     var shelfs = [Shelf]()
+    
+    init(name:String, address:String){
+        self.name = name
+        self.address = address
+    }
     
     func AddShelf(shelf: Shelf){
         shelfs.append(shelf)
